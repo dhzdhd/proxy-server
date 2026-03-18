@@ -1,0 +1,11 @@
+# Secret files — never commit these
+terraform.tfvars
+*.pem
+*.key
+wg0-client.conf
+ 
+# OpenTofu state (use remote state in production)
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
